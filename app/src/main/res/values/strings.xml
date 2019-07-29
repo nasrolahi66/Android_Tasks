@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android_Tasks</string>
+    <string name="first_quarter">first_quarter</string>
+    <string name="second_quarter">second_quarter</string>
+    <string name="third_quarter">third_quarter</string>
+    <string name="fourth_quarter">fourth_quarter</string>
 </resources>
