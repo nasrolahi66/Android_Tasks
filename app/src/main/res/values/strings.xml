@@ -4,4 +4,6 @@
     <string name="second_quarter">second_quarter</string>
     <string name="third_quarter">third_quarter</string>
     <string name="fourth_quarter">fourth_quarter</string>
+    <string name="hamberger_menu">Hamberger Menu</string>
+    <string name="register">Register</string>
 </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtName"
+        android:hint="Please Enter Your First name"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtFamily"
+        android:hint="Please Enter Your Last name"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMail"
+        android:hint="Please Enter Your Email"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPhone"
+        android:hint="Please Enter Your Phone number"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPreview"
+        android:layout_margin="5dp"
+        android:text="Preview"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>
