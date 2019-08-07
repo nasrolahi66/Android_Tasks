@@ -23,7 +23,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".Session3_task2_Activity" />
-        <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity" />
     </application>
 

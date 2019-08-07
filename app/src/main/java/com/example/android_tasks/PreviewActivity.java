@@ -2,6 +2,7 @@ package com.example.android_tasks;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,32 +35,22 @@ public class PreviewActivity extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PreferenceManager.getDefaultSharedPreferences(PreviewActivity.this).edit()
+                        .putString("name", txtName.getText().toString())
+                        .putString("lastName",txtLastName.getText().toString())
+                        .putString("email",txtEmail.getText().toString())
+                        .putString("number",txtNumber.getText().toString()).apply();
                 Intent intent1=new Intent();
-                String name=txtName.getText().toString();
-                String lastName=txtLastName.getText().toString();
-                String email=txtEmail.getText().toString();
-                String number=txtNumber.getText().toString();
-                intent1.putExtra("Name",name);
-                intent1.putExtra("LastName",lastName);
-                intent1.putExtra("Email",email);
-                intent1.putExtra("Number",number);
+
                 setResult(Activity.RESULT_OK,intent1);
                 finish();
+
             }
         });
         btnEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=new Intent();
-                String name=txtName.getText().toString();
-                String lastName=txtLastName.getText().toString();
-                String email=txtEmail.getText().toString();
-                String number=txtNumber.getText().toString();
-                intent1.putExtra("Name",name);
-                intent1.putExtra("LastName",lastName);
-                intent1.putExtra("Email",email);
-                intent1.putExtra("Number",number);
-                setResult(Activity.RESULT_CANCELED,intent);
+
                 finish();
 
 
